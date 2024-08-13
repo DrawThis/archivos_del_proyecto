@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Arte</title>
+    <link rel="stylesheet" href="Historia_Arte.css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <nav>
+                <img src="../../../../IMAGES/1697232378791.png" alt="" class="logo">
+                <div class="lesson">Curso: Historia del Arte</div>
+                <div class="nav-item" id="nav-item-1">
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="rombo" id="rombo-1" onclick="location.href='../1/Historia_Arte.html'">
+                        </div>
+                        <div class="circle" id="circle-1" onclick="location.href='../2/Historia_Arte.html'"></div>
+                        <div class="square" id="square-1">
+                            <span class="numero">3</span>
+                        </div>
+                        <div class="circle" id="circle-2"></div>
+                        <div class="circle" id="circle-3"></div>
+                        <div class="circle" id="circle-4"></div>
+                        <div class="circle" id="circle-5"></div>
+                        <div class="circle" id="circle-6"></div>
+                        <div class="circle" id="circle-7"></div>
+                        <div class="circle" id="circle-8"></div>
+                    </div>
+                </div>
+                
+                <div class="menu-toggle" id="menuToggle">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="side-menu" id="sideMenu">
+                    <a href="#">Contacto</a>
+                    <a href="#">Soporte</a>
+                    <a href="#">Privacidad</a>
+                    <a href="../../../../HTML/cursos.html">Volver</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="../../../../IMAGES/Arte Prehistórico.jfif" alt="" class="modal-image">
+            <p><strong>Objetivo:</strong> Intenta recrear esta imagen.</p>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <section class="tools-board">
+              <div class="row">
+                <label class="title">Figuras</label>
+                <ul class="options">
+                  <li class="option tool" id="rectangle">
+                    <img src="../../../../IMAGES/rectangle.svg" alt="">
+                    <span>Rectángulo</span>
+                  </li>
+                  <li class="option tool" id="circle">
+                    <img src="../../../../IMAGES/circle.svg" alt="">
+                    <span>Círculo</span>
+                  </li>
+                  <li class="option tool" id="triangle">
+                    <img src="../../../../IMAGES/triangle.svg" alt="">
+                    <span>Triángulo</span>
+                  </li>
+                  <li class="option">
+                    <input type="checkbox" id="fill-color">
+                    <label for="fill-color">Rellenar figura</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <label class="title">Opciones</label>
+                <ul class="options">
+                  <li class="option active tool" id="brush">
+                    <img src="../../../../IMAGES/brush.svg" alt="">
+                    <span>Pincel</span>
+                  </li>
+                  <li class="option tool" id="eraser">
+                    <img src="../../../../IMAGES/eraser.svg" alt="">
+                    <span>Borrador</span>
+                  </li>
+                  <li class="option">
+                    <input type="range" id="size-slider" min="1" max="30" value="5">
+                  </li>
+                </ul>
+              </div>
+              <div class="row colors">
+                <label class="title">Colores</label>
+                <ul class="options">
+                  <li class="option"></li>
+                  <li class="option selected"></li>
+                  <li class="option"></li>
+                  <li class="option"></li>
+                  <li class="option">
+                    <input type="color" id="color-picker" value="#4A98F7">
+                  </li>
+                </ul>
+              </div>
+              <div class="row buttons">
+                <button class="clear-canvas">Limpiar todo</button>
+                <button class="save-img">Guardar tu ilustración <br> <strong>(Opcional)</strong></button>
+              </div>
+            </section>
+            <section class="drawing-board">
+              <canvas></canvas>
+            </section>
+          </div>
+          <div class="objective">
+            <img src="../../../../IMAGES/Arte Prehistórico.jfif" alt="" class="objective-image">
+            <button class="end">Terminar</button>
+            <p><strong>Nota:</strong> Puedes ampliar la</p>
+            <p>imagen con solo apretarla.</p>
+          </div>
+    </main>
+    <div class="button">
+    <button class="next" onclick="location.href='../4/Historia_Arte.html'">
+        <span class="arrow"></span>
+    </button>
+    </div>
+    <div class="level-info" id="level-info"></div>
+    <script src="Historia_Arte.js"></script>
+    <script src="Niv_3.js"></script>
+    <script src="Image.js"></script>
+</body>
+</html>
